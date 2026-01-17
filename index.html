@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Course home page for WDD 231">
@@ -20,91 +21,104 @@
 
   <!-- Open Graph meta properties -->
   <meta property="og:title" content="Saul Arana | WDD 231 Course Home Page">
-  <meta property="og:description" content="Course home page for WDD 231 Web Frontend Development I. Includes weekly assignments, projects, and learning activities.">
+  <meta property="og:description"
+    content="Home page for WDD 231: Web Frontend Development I. Includes assignments, projects, and resources to learn HTML, CSS, and JavaScript.">
   <meta property="og:image" content="https://SAAC7.github.io/wdd231/">
-  <meta property="og:url" content="https://SAAC7.github.io/wdd231/images/AB7ec.png">
+  <meta property="og:url" content="https://SAAC7.github.io/wdd231/images/ab7ec.png">
+
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
 
 </head>
+
 <body>
 
-<header>
-  <img src="images/AB7ec.png" alt="Site logo">
-  <span>Saúl Abraham Arana Calderón</span>
-  <button id="menuBtn">☰</button>
-</header>
+  <header>
+    <img src="images/ab7ec.png" alt="Site logo">
+    <span>Saúl Abraham Arana Calderón</span>
+    <button id="menuBtn">☰</button>
+  </header>
 
-<nav id="navMenu">
-  <a href="index.html" class="active">Home</a>
-  <a href="#">Chamber</a>
-  <a href="#">Final</a>
-</nav>
+  <nav id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
 
-<main>
-  <h1>Home</h1>
+  <main>
+    <h1>Home</h1>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hi! I'm <strong>Saúl Arana</strong> from Quetzaltenango, Guatemala — a tech enthusiast passionate about programming, cybersecurity, and Linux customization. I love exploring how technology can make life smarter and more creative, from setting up my own media servers to developing personal finance apps. For me, tech isn’t just a career — it’s a way to build, learn, and have fun.</p>
-  </section>
+    <section>
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Saúl Arana</strong> from Quetzaltenango, Guatemala — a tech enthusiast passionate about
+        programming, cybersecurity, and Linux customization. I love exploring how technology can make life smarter and
+        more creative, from setting up my own media servers to developing personal finance apps. For me, tech isn’t just
+        a career — it’s a way to build, learn, and have fun.</p>
+    </section>
 
-  <section>
-    <h2>Certificate Courses</h2>
+    <section>
+      <h2>Certificate Courses</h2>
 
-    <div class="course-filters">
-      <button data-filter="all">All</button>
-      <button data-filter="wdd">WDD</button>
-      <button data-filter="cse">CSE</button>
+      <div class="course-filters">
+        <button data-filter="all">All</button>
+        <button data-filter="wdd">WDD</button>
+        <button data-filter="cse">CSE</button>
+      </div>
+
+      <div id="courses"></div>
+      <p id="totalCredits"></p>
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <ul class="resources">
+        <li>
+          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+            MDN Web Docs
+          </a> – Reference for HTML, CSS, and JavaScript.
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
+            W3Schools
+          </a> – Quick examples and explanations.
+        </li>
+        <li>
+          <a href="https://javascript.info/" target="_blank" rel="noopener">
+            JavaScript.info
+          </a> – In-depth JavaScript concepts.
+        </li>
+        <li>
+          <a href="https://fonts.google.com/" target="_blank" rel="noopener">
+            Google Fonts
+          </a> – Web typography resources.
+        </li>
+        <li>
+          <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noopener">
+            Lighthouse
+          </a> – Performance and accessibility audits.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/SAAC7">GitHub</a>
+      <a href="https://www.linkedin.com/in/saac7/">LinkedIn</a>
     </div>
 
-    <div id="courses"></div>
-    <p id="totalCredits"></p>
-  </section>
+    <p>
+      &copy; <span id="year"></span> Saul Arana | Guatemala
+    </p>
 
-  <section>
-  <h2>Resources</h2>
-  <ul class="resources">
-    <li>
-      <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
-        MDN Web Docs
-      </a> – Reference for HTML, CSS, and JavaScript.
-    </li>
-    <li>
-      <a href="https://www.w3schools.com/" target="_blank" rel="noopener">
-        W3Schools
-      </a> – Quick examples and explanations.
-    </li>
-    <li>
-      <a href="https://javascript.info/" target="_blank" rel="noopener">
-        JavaScript.info
-      </a> – In-depth JavaScript concepts.
-    </li>
-    <li>
-      <a href="https://fonts.google.com/" target="_blank" rel="noopener">
-        Google Fonts
-      </a> – Web typography resources.
-    </li>
-    <li>
-      <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noopener">
-        Lighthouse
-      </a> – Performance and accessibility audits.
-    </li>
-  </ul>
-</section>
-
-</main>
-
-<footer>
-  <div class="social">
-    <a href="https://github.com/SAAC7">GitHub</a>
-    <a href="https://www.linkedin.com/in/saac7/">LinkedIn</a>
-  </div>
-
-  <p>
-    &copy; <span id="year"></span> Saul Arana | Guatemala
-  </p>
-
-  <p id="lastModified"></p>
-</footer>
+    <p id="lastModified"></p>
+  </footer>
 
 </body>
+
 </html>
