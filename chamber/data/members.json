@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Universidad Rafael Landívar – Campus Quetzaltenango",
+    "address": "Zona 3, Quetzaltenango, Guatemala",
+    "phone": "+502 7763 6300",
+    "website": "https://www.url.edu.gt",
+    "image": "url-xela.png",
+    "membership": 3,
+    "description": "Higher education institution offering undergraduate and graduate programs."
+  },
+  {
+    "name": "Interplaza Xela",
+    "address": "Km. 205 Carretera a San Marcos, Municipio La Esperanza, Quetzaltenango",
+    "phone": "+502 7767 9000",
+    "website": "https://interplazaxela.com.gt/",
+    "image": "interplaza-xela.webp",
+    "membership": 2,
+    "description": "Shopping center with retail stores, restaurants, and entertainment."
+  },
+  {
+    "name": "Hotel Latam Quetzaltenango",
+    "address": "Avenida Las Américas 7-04 Zona 3 ",
+    "phone": "+502 7765 1200",
+    "website": "https://www.latamhotelxela.com/",
+    "image": "hotel-latam.jpg",
+    "membership": 3,
+    "description": "Modern hotel offering accommodation and conference services."
+  },
+  {
+    "name": "Cooperativa El Bienestar RL",
+    "address": "Zona 1, Quetzaltenango, Guatemala",
+    "phone": "+502 7761 4500",
+    "website": "https://cooperativaelbienestar.com.gt/",
+    "image": "cooperativa-bienestar.png",
+    "membership": 1,
+    "description": "Financial cooperative supporting local savings and loans."
+  }
+]
