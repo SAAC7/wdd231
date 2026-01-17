@@ -43,6 +43,15 @@ footer {
   font-weight: bold;
 }
 
+#menu {
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* ===== MAIN ===== */
 main {
   max-width: 1200px;
@@ -166,6 +175,7 @@ main {
 .site-header {
   background-color: #003366;
   color: white;
+  min-height: 90px;
 }
 
 .header-content {

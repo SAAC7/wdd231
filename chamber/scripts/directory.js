@@ -36,7 +36,7 @@ card.classList.add('member-card');
 card.innerHTML = `
   <h2>${member.name}</h2>
   <div class="img-wrapper">
-    <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+    <img src="images/${member.image}" alt="${member.name} logo" width="300" height="160" loading="lazy">
   </div>
   <p>${member.address}</p>
   <p>${member.phone}</p>
