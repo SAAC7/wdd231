@@ -34,5 +34,50 @@
     "image": "cooperativa-bienestar.png",
     "membership": 1,
     "description": "Financial cooperative supporting local savings and loans."
+  },
+  {
+    "name": "Agencia de Viajes Xela Tours",
+    "address": "Avenida Las Américas, Quetzaltenango",
+    "phone": "+502 5698 4863",
+    "website": "https://www.facebook.com/xelatours1",
+    "image": "xela-tours.jpg",
+    "membership": 2,
+    "description": "Tourism agency offering cultural and adventure travel packages."
+  },
+  {
+    "name": "Colegio La Patria",
+    "address": "19 av. 1-28, zona 3, Quetzaltenango, Guatemala.",
+    "phone": "+502 7828 5600",
+    "website": "https://www.colegio-la-patria-occidente.es",
+    "image": "colegio-patria.jpg",
+    "membership": 1,
+    "description": "Private school offering primary and secondary education."
+  },
+  {
+    "name": "Banco de América Central (BAC)",
+    "address": "18 Avenida 03-34 zona 3, Quetzaltenango, Guatemala",
+    "phone": "+502 5511 0222",
+    "website": "https://www.baccredomatic.com/es-gt",
+    "image": "bac-xela.png",
+    "membership": 3,
+    "description": "Regional bank offering financial services, credit cards, and business solutions."
+  },
+  {
+    "name": "Banco de Desarrollo Rural, S.A. (Banrural)",
+    "address": "19 Avenida 2-40 zona 3, Quetzaltenango, Guatemala",
+    "phone": "+502 2308 3000",
+    "website": "https://www.banrural.com.gt/site/personas",
+    "image": "banrural-xela.jpg",
+    "membership": 3,
+    "description": "National bank focused on rural development, savings, and credit services."
+  },
+  {
+    "name": "Beehive School Quetzaltenango",
+    "address": " 15 calle 1A-25 zona 6 Llanos de la Cruz Olintepeque Quetzaltenango, Guatemala",
+    "phone": "+502 7763 9649",
+    "website": "https://www.beehiveschool.edu.gt/",
+    "image": "beehive-school.jpg",
+    "membership": 2,
+    "description": "Bilingual private school with an international education approach."
   }
 ]
