@@ -8,7 +8,7 @@
   <meta name="author" content="Saul Arana">
   <title>Chamber Directory | Quetzaltenango</title>
   <meta name="theme-color" content="#003366">
-    <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico">
 
 
   <!-- Open Graph / Facebook -->
@@ -29,8 +29,10 @@
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
-  <script src="scripts/directory.js" defer></script>
+
   <script src="scripts/footer.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -47,9 +49,9 @@
 
       <nav id="primary-nav">
         <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
 
         </ul>
@@ -58,22 +60,47 @@
   </header>
 
 
+ <main>
 
-  <main>
-    <section class="view-controls">
-      <button id="grid">⬛ Grid</button>
-      <button id="list">📄 List</button>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.jpg" media="(min-width: 768px)">
+      <img src="images/hero-small.jpg" alt="Quetzaltenango city and local businesses">
+    </picture>
+    <a href="join.html" class="cta">Join the Chamber</a>
+  </section>
 
-    <section id="list-header" class="list-header">
-      <span>Company</span>
-      <span>Address</span>
-      <span>Phone</span>
-      <span>Website</span>
-    </section>
+  <!-- EVENTS -->
+  <section class="events">
+    <h2>Current Events</h2>
+    <ul>
+      <li>Business Fair – March 10</li>
+      <li>Local Networking Night – March 18</li>
+    </ul>
+  </section>
 
-    <section id="members" class="grid"></section>
-  </main>
+  <!-- WEATHER -->
+<section class="weather">
+  <h3>Current Weather</h3>
+  <p><span id="temp"></span></p>
+  <figure>
+    <img id="weather-icon" src="" alt="">
+    <figcaption id="desc"></figcaption>
+  </figure>
+</section>
+
+
+  <!-- SPOTLIGHTS -->
+<section class="spotlights">
+  <h2>Member Spotlights</h2>
+  <div id="spotlight-container"></div>
+</section>
+
+
+</main>
+
+
 
 
   <footer class="site-footer">
