@@ -27,7 +27,7 @@
 
 
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/footer.js" defer></script>
@@ -108,11 +108,13 @@
       <label>
         Membership Level:
         <select name="membership" required title="Select your membership level">
-          <option value="np">NP Membership (Non-Profit, no fee)</option>
-          <option value="bronze">Bronze Membership</option>
-          <option value="silver">Silver Membership</option>
-          <option value="gold">Gold Membership</option>
-        </select>
+  <option value="" disabled selected>Select a membership level</option>
+  <option value="np">NP Membership (Non-Profit, no fee)</option>
+  <option value="bronze">Bronze Membership</option>
+  <option value="silver">Silver Membership</option>
+  <option value="gold">Gold Membership</option>
+</select>
+
       </label>
 
       <!-- Business Description -->
@@ -201,11 +203,12 @@
                 <p>✉ <a href="mailto:saulabraham881@gmail.com">saulabraham881@gmail.com</a></p>
             </section>
 
-            <section class="footer-meta">
-                <p>© <span id="year"></span> Quetzaltenango Chamber of Commerce</p>
-                <p>Saul Arana | WDD 231</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </section>
+           <div class="footer-meta">
+  <p>© <span id="year"></span> Quetzaltenango Chamber of Commerce</p>
+  <p>Saul Arana | WDD 231</p>
+  <p>Last Modification: <span id="lastModified"></span></p>
+</div>
+
 
         </div>
     </footer>
