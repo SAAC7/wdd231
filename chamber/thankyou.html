@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you page for joining the Quetzaltenango Chamber of Commerce">
+    <meta name="author" content="Saul Arana">
+    <title>Thank You | Quetzaltenango Chamber</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer>
+        // Función para obtener parámetros GET
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name) || '';
+        }
+
+        // Mostrar los datos del formulario
+        window.addEventListener('DOMContentLoaded', () => {
+            const fields = ['firstName', 'lastName', 'email', 'mobile', 'business', 'timestamp'];
+            fields.forEach(field => {
+                const element = document.getElementById(field);
+                if (element) {
+                    element.textContent = getQueryParam(field);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="branding">
+                <h1>Quetzaltenango Chamber of Commerce</h1>
+                <p class="tagline">Supporting local business and community growth</p>
+                <button id="menu-btn" aria-label="Open Menu">&#9776;</button>
+            </div>
+            <nav id="primary-nav">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thankyou-message">
+            <h2>Thank You for Joining!</h2>
+            <p>We appreciate your interest in the Quetzaltenango Chamber of Commerce. Here is the information you submitted:</p>
+
+            <ul class="submitted-info">
+                <li><strong>First Name:</strong> <span id="firstName"></span></li>
+                <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Mobile Number:</strong> <span id="mobile"></span></li>
+                <li><strong>Business/Organization Name:</strong> <span id="business"></span></li>
+                <li><strong>Form Submitted On:</strong> <span id="timestamp"></span></li>
+            </ul>
+
+            <p>If any information is incorrect, please <a href="join.html">go back and update your submission</a>.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <section class="footer-info">
+                <h2>Contact & Info</h2>
+                <p>📍 Quetzaltenango, Guatemala</p>
+                <p>📞 +502 4908 1954</p>
+                <p>✉ <a href="mailto:saulabraham881@gmail.com">saulabraham881@gmail.com</a></p>
+            </section>
+            <section class="footer-meta">
+                <p>© <span id="year"></span> Quetzaltenango Chamber of Commerce</p>
+                <p>Saul Arana | WDD 231</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

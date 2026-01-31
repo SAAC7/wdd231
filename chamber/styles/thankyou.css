@@ -1,0 +1,76 @@
+/* ===== THANK YOU PAGE ===== */
+.thankyou-message {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.thankyou-message h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.thankyou-message p {
+  color: #222;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.submitted-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.submitted-info li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitted-info li strong {
+  color: #003366;
+}
+
+/* Link back to form */
+.thankyou-message a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc00;
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.thankyou-message a:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .submitted-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .submitted-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
