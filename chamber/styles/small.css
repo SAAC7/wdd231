@@ -416,3 +416,157 @@ main {
     align-items: flex-start;
   }
 }
+
+
+
+
+/* this is for the join */
+
+/* ===== MEMBERSHIP FORM ===== */
+.membership-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.membership-form h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* LABELS */
+.membership-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.membership-form label input,
+.membership-form label select,
+.membership-form label textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* INPUT FOCUS */
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus {
+  border-color: #003366;
+  box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+  outline: none;
+}
+
+/* TEXTAREA */
+.membership-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* SUBMIT BUTTON */
+.membership-form input[type="submit"] {
+  background-color: #003366;
+  color: #ffcc00;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.membership-form input[type="submit"]:hover {
+  background-color: #002244;
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .membership-form {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .membership-form h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 2rem;
+}
+
+.membership-cards .card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.membership-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.membership-cards .card:nth-child(2) { animation-delay: 0.3s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.5s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* this is for modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
