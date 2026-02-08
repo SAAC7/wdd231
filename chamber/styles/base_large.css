@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .navigation li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  /* Mostrar menú normal */
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
