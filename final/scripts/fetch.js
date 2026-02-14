@@ -23,7 +23,9 @@ async function loadDistros() {
           <p><strong>Base:</strong> ${distro.base}</p>
           <p><strong>Desktop:</strong> ${distro.desktop}</p>
           <p><strong>Level:</strong> ${distro.level}</p>
-          <a href="#" data-index="${index}" class="view-more">View More</a>
+          <div class="buttons-grid">
+            <a href="#" data-index="${index}" class="view-more">View More</a>
+          </div>
         </div>
       `;
 

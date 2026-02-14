@@ -1,7 +1,6 @@
 // storage.js
 
 const distroGrid = document.getElementById('distroGrid');
-
 // Obtener favoritos de localStorage
 function getFavorites() {
   const favs = localStorage.getItem('favorites');
@@ -36,7 +35,6 @@ function addFavoriteButtons() {
       const btn = document.createElement('button');
       btn.classList.add('fav-btn');
       btn.type = 'button';
-      btn.style.marginTop = '0.5rem';
       btn.addEventListener('click', () => {
         const name = card.querySelector('h3').textContent;
         let favs = getFavorites();
@@ -48,8 +46,8 @@ function addFavoriteButtons() {
         setFavorites(favs);
         updateFavoritesUI();
       });
-      card.querySelector('.card-content').appendChild(btn);
-    }
+      card.querySelector('.buttons-grid').appendChild(btn);
+    }    
   });
 
   updateFavoritesUI();
@@ -57,5 +55,5 @@ function addFavoriteButtons() {
 
 // Inicializar favoritos cuando el DOM esté cargado
 window.addEventListener('DOMContentLoaded', () => {
-  addFavoriteButtons();
+  setTimeout(addFavoriteButtons, 500);
 });

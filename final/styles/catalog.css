@@ -45,9 +45,10 @@
 }
 
 .card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
 }
 
 .card-content {
@@ -71,7 +72,8 @@
   color: #333;
 }
 
-.card-content a {
+
+.card-content .buttons-grid a {
   margin-top: auto;
   align-self: flex-start;
   display: inline-block;
@@ -135,10 +137,11 @@
   border: 1px solid #0D47A1;
   color: #0D47A1;
   border-radius: 5px;
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .fav-btn.active {
