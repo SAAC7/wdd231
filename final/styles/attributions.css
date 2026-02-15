@@ -1,0 +1,17 @@
+.container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container ul li {
+  background-color: #f5f7fa;
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  border-left: 5px solid #0D47A1;
+  border-radius: 5px;
+  line-height: 1.5;
+}

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linux Distro Catalog | WDD 231</title>
-  <meta name="description" content="Compare popular Linux distributions to find the best one for your needs. Beginner-friendly and advanced guides included.">
+  <meta name="description"
+    content="Compare popular Linux distributions to find the best one for your needs. Beginner-friendly and advanced guides included.">
   <meta name="author" content="Saul Arana">
   <!-- Open Graph -->
   <meta property="og:title" content="Linux Distro Catalog">
@@ -14,9 +16,10 @@
 
 
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/date.js" defer></script>
-  
+  <link rel="stylesheet" href="styles/attributions.css">
+
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -34,17 +37,30 @@
   </header>
 
   <!-- MAIN HERO SECTION -->
-  <main>
+  <main class="container">
+    <section>
+      <h1>Attributions</h1>
 
+      <ul>
+        <li>Linux distribution information sourced from official distribution websites.</li>
+        <li>Logos and images belong to their respective projects.</li>
+        <li>Ubuntu logo and information from ubuntu.com</li>
+        <li>Arch Linux logo and information from archlinux.org</li>
+        <li>Other distro assets from their official websites.</li>
+      </ul>
+    </section>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy;<span id="year"></span>  | Linux Distro Catalog | WDD 231</p>
-    <p><a href="https://youtu.be/YOURVIDEOID" target="_blank">Project Video Demonstration</a> | <a href="attributions.html">Attributions</a></p>
-<p id="lastModified"></p>  
-</footer>
+    <p>&copy;<span id="year"></span> | Linux Distro Catalog | WDD 231</p>
+    <p><a href="https://youtu.be/YOURVIDEOID" target="_blank">Project Video Demonstration</a> | <a
+        href="attributions.html">Attributions</a></p>
+    <p id="lastModified"></p>
+  </footer>
 
+  <script src="scripts/date.js" type="module"></script>
   <script src="scripts/main.js" type="module"></script>
 </body>
+
 </html>
