@@ -1,13 +1,13 @@
-.container h1 {
+.page-container h1 {
   margin-bottom: 1.5rem;
 }
 
-.container ul {
+.page-container ul {
   list-style: none;
   padding: 0;
 }
 
-.container ul li {
+.page-container ul li {
   background-color: #f5f7fa;
   margin-bottom: 0.8rem;
   padding: 1rem;
